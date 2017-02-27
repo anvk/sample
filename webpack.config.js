@@ -28,7 +28,7 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     filename: '../index.html',
-    template: '../../src/templates/index.html',
+    template: './templates/index.html',
     inject: true,
     alwaysWriteToDisk: true,
   }),

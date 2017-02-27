@@ -1,16 +1,55 @@
-<!DOCTYPE html>
-<html class="no-js">
-    <head>
-        <title>Sample</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-
-    <body>
-        <div id='app'>
-            Default Inner HTML
-        </div>
-    <script type="text/javascript" src="scripts/vendor.bundle.js"></script><script type="text/javascript" src="scripts/app.bundle.js"></script></body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Entry module not found: Error: Cannot resolve 'file' or 'directory' /Users/anvk/Documents/github/sample/src/scripts/templates/index.html in /Users/anvk/Documents/github/sample/src/scripts:
+  Error: Cannot resolve 'file' or 'directory' /Users/anvk/Documents/github/sample/src/scripts/templates/index.html in /Users/anvk/Documents/github/sample/src/scripts
+  
+  - compiler.js:76 
+    [sample]/[html-webpack-plugin]/lib/compiler.js:76:16
+  
+  - Compiler.js:214 Compiler.<anonymous>
+    [sample]/[webpack]/lib/Compiler.js:214:10
+  
+  - Compiler.js:403 
+    [sample]/[webpack]/lib/Compiler.js:403:12
+  
+  - Tapable.js:67 Compiler.next
+    [sample]/[tapable]/lib/Tapable.js:67:11
+  
+  - CachePlugin.js:40 Compiler.<anonymous>
+    [sample]/[webpack]/lib/CachePlugin.js:40:4
+  
+  - Tapable.js:71 Compiler.applyPluginsAsync
+    [sample]/[tapable]/lib/Tapable.js:71:13
+  
+  - Compiler.js:400 Compiler.<anonymous>
+    [sample]/[webpack]/lib/Compiler.js:400:9
+  
+  - Compilation.js:577 Compilation.<anonymous>
+    [sample]/[webpack]/lib/Compilation.js:577:13
+  
+  - Tapable.js:60 Compilation.applyPluginsAsync
+    [sample]/[tapable]/lib/Tapable.js:60:69
+  
+  - Compilation.js:572 Compilation.<anonymous>
+    [sample]/[webpack]/lib/Compilation.js:572:10
+  
+  - Tapable.js:60 Compilation.applyPluginsAsync
+    [sample]/[tapable]/lib/Tapable.js:60:69
+  
+  - Compilation.js:567 Compilation.<anonymous>
+    [sample]/[webpack]/lib/Compilation.js:567:9
+  
+  - Tapable.js:60 Compilation.applyPluginsAsync
+    [sample]/[tapable]/lib/Tapable.js:60:69
+  
+  - Compilation.js:563 Compilation.<anonymous>
+    [sample]/[webpack]/lib/Compilation.js:563:8
+  
+  - Tapable.js:60 Compilation.applyPluginsAsync
+    [sample]/[tapable]/lib/Tapable.js:60:69
+  
+  - Compilation.js:525 Compilation.seal
+    [sample]/[webpack]/lib/Compilation.js:525:7
+  
+</pre><script type="text/javascript" src="scripts/vendor.bundle.js"></script><script type="text/javascript" src="scripts/app.bundle.js"></script>
