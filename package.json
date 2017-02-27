@@ -1,0 +1,60 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "node ./node_modules/del-cli/cli.js -f ./dist/",
+    "copy:htdocs": "node ./node_modules/mkdirp/bin/cmd.js ./dist && node ./node_modules/cpy-cli/cli.js ./src/htdocs/*.* ./dist/",
+    "prep": "npm run clean && npm run copy:htdocs",
+    "start": "npm run prep && node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --display-error-details"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anvk/sample.git"
+  },
+  "author": "Alexey Novak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anvk/sample/issues"
+  },
+  "homepage": "https://github.com/anvk/sample#readme",
+  "dependencies": {
+    "react": "15.4.2",
+    "react-dom": "15.4.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "autoprefixer-loader": "3.2.0",
+    "babel-cli": "6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-register": "6.18.0",
+    "cpy-cli": "^1.0.1",
+    "css-loader": "^0.25.0",
+    "del-cli": "0.2.1",
+    "file-loader": "0.9.0",
+    "html-webpack-harddisk-plugin": "^0.1.0",
+    "html-webpack-plugin": "2.28.0",
+    "jsdom": "9.8.3",
+    "jsdom-global": "2.1.0",
+    "json-loader": "0.5.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "mkdirp": "0.5.1",
+    "node-sass": "4.5.0",
+    "node-static": "0.7.7",
+    "react-addons-test-utils": "15.4.1",
+    "react-hot-loader": "1.3.0",
+    "sass-loader": "4.1.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "0.5.7",
+    "webpack": "1.14.0",
+    "webpack-dev-middleware": "1.8.4",
+    "webpack-dev-server": "1.16.2",
+    "webpack-hot-middleware": "2.13.2"
+  }
+}

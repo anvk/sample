@@ -1,0 +1,17 @@
+*.tmp
+*.DS_Store
+*.pyc
+
+# ignore editor configurations
+.vscode
+
+# ignore vagrant stuff (but not the Vagrantfile)
+.vagrant
+
+# dist files / folders
+api/api
+ui/ui
+ui/dist
+
+# Dependency directory
+node_modules
